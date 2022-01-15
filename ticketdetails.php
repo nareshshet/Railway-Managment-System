@@ -26,7 +26,7 @@ $result=$conn->query($sql);
   
         h1 {
             text-align: center;
-            color: black;
+            color: rgb(187, 153, 255);
             font-size: xx-large;
             font-family: 'Gill Sans', 'Gill Sans MT', 
             ' Calibri', 'Trebuchet MS', 'sans-serif';
