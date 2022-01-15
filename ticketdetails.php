@@ -7,7 +7,7 @@ if(!$conn){
 }
 $email =$_SESSION['user_info'] ;
 // echo "Session ".$email;
-$sql = "SELECT * FROM passenger where email_id='$email'";
+$sql = "select * from ticket where user_id='$email'";
 $result=$conn->query($sql);
 ?>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ $result=$conn->query($sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passengers Details</title>
+    <title>Ticket Details</title>
     <style>
         table {
             margin: 0 auto;
@@ -26,7 +26,7 @@ $result=$conn->query($sql);
   
         h1 {
             text-align: center;
-            color: blue;
+            color: black;
             font-size: xx-large;
             font-family: 'Gill Sans', 'Gill Sans MT', 
             ' Calibri', 'Trebuchet MS', 'sans-serif';
@@ -53,7 +53,7 @@ $result=$conn->query($sql);
             font-weight: lighter;
         }
         html {
-        background: url(https://cdn.pixabay.com/photo/2016/07/19/08/42/central-station-1527780_960_720.jpg) no-repeat center center fixed;
+        background: url(https://cdn.pixabay.com/photo/2021/12/09/14/11/railway-6858240_960_720.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -64,19 +64,13 @@ $result=$conn->query($sql);
 <?php
 include("header.php"); ?>
 <section>
-<br><br><br>
-        <h1>Passenger  Details</h1>
+        <h1>Ticket Details</h1>
         <!-- TABLE CONSTRUCTION-->
         <table>
             <tr>
-                <th>Id</th>
-
-                <th>Passenger Name</th>
-                <th>Age</th>
-                <th>Gender</th>
-                <th>Phone Number</th>
-                <th>Address</th>
-
+                <th>PNR</th>
+                <th>Status</th>
+                <th>Train Number</th>
             </tr>
             <!-- PHP CODE TO FETCH DATA FROM ROWS-->
             <?php   // LOOP TILL END OF DATA 
@@ -85,13 +79,9 @@ include("header.php"); ?>
              ?>
             <tr>
                
-                <td><?php echo $rows['p_id'];?></td>
-                <td><?php echo $rows['p_name'];?></td>
-                <td><?php echo $rows['p_age'];?></td>
-                <td><?php echo $rows['p_gender'];?></td>
-                <td><?php echo $rows['p_number'];?></td>
-                <td><?php echo $rows['p_address'];?></td>
-
+                <td><?php echo $rows['pnr'];?></td>
+                <td><?php echo $rows['status'];?></td>
+                <td><?php echo $rows['train_num'];?></td>
             </tr>
             <?php
                 }

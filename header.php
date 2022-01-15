@@ -28,12 +28,14 @@
           <div class="Menu">
             <ul id="navmenu">
             <li><A HREF="index.php">Home</A></li>
-            <li><A HREF="pnrstatus.php">PNR Status</A></li>
+            <li><A HREF="traindetails.php">Train Details</A></li>
+
             <li><A HREF="addpassenger.html">Add Passenger</A></li>
             <li><A HREF="passengerdetails.php">Passengers</A></li>
 
-             <li><A HREF="traindetails.php">Train Details</A></li>
             <li><a href="bookticket.php">Book a ticket</a></li>
+            <li><A HREF="ticketdetails.php">Ticket Status</A></li>
+
             <li><?php  
 				if(isset($_SESSION['user_info'])){
 					echo '<div id="dropdown">'.$_SESSION['user_info'].'<div id="Logout" style="display:none">Logout</div>';
