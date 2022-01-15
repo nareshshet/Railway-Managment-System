@@ -13,7 +13,7 @@
 	color: white;
 }
 html { 
-  background: url(img/bg3.jpg) no-repeat center center fixed; 
+  background: url(https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

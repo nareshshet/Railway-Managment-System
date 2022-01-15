@@ -33,7 +33,7 @@
             <li><A HREF="passengerdetails.php">Passengers</A></li>
 
              <li><A HREF="traindetails.php">Train Details</A></li>
-            <li><a href="booktkt.php">Book a ticket</a></li>
+            <li><a href="bookticket.php">Book a ticket</a></li>
             <li><?php  
 				if(isset($_SESSION['user_info'])){
 					echo '<div id="dropdown">'.$_SESSION['user_info'].'<div id="Logout" style="display:none">Logout</div>';
@@ -42,7 +42,7 @@
 					echo '<A HREF="login.html">Login/Register</A>';
 				?>
 			</li>
-      <li><a href="logout.php">LOG OUT</a></li>
+      <li><a href="logout.php">log out</a></li>
             </ul>
           </div>
         </div>
