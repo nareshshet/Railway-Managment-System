@@ -2,7 +2,11 @@
 <html>
 <head>
 <title></title>
+<<<<<<< Updated upstream
 <link rel="stylesheet" href="s1.css" type="text/css">
+=======
+<link rel="stylesheet" href="style.css" type="text/css">
+>>>>>>> Stashed changes
 <style type="text/css">
 	li {
 		font-family: sans-serif;
