@@ -16,7 +16,7 @@ $result=$conn->query($sql);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Train Details</title>
+    <title>Passengers Details</title>
     <style>
         table {
             margin: 0 auto;
@@ -64,7 +64,8 @@ $result=$conn->query($sql);
 <?php
 include("header.php"); ?>
 <section>
-        <h1>Train  Details</h1>
+<br><br><br>
+        <h1>Passenger  Details</h1>
         <!-- TABLE CONSTRUCTION-->
         <table>
             <tr>

@@ -17,6 +17,7 @@ $sql_result = mysqli_query ($conn, $sql) or die ('request "Could not execute SQL
 		if(!empty($user)){
 			$_SESSION['user_info'] = $email;
 			$message='Logged in successfully';
+			header("location:index.php");
 		}
 		else{
 			$message = 'Wrong email or password.';

@@ -2,7 +2,7 @@
 <html>
 <head>
 <title></title>
-<link rel="stylesheet" href="s1.css" type="text/css">
+<link rel="stylesheet" href="css/header.css" type="text/css">
 <style type="text/css">
 	li {
 		font-family: sans-serif;
@@ -30,6 +30,8 @@
             <li><A HREF="index.php">Home</A></li>
             <li><A HREF="pnrstatus.php">PNR Status</A></li>
             <li><A HREF="addpassenger.html">Add Passenger</A></li>
+            <li><A HREF="passengerdetails.php">Passengers</A></li>
+
              <li><A HREF="traindetails.php">Train Details</A></li>
             <li><a href="booktkt.php">Book a ticket</a></li>
             <li><?php  
@@ -37,9 +39,10 @@
 					echo '<div id="dropdown">'.$_SESSION['user_info'].'<div id="Logout" style="display:none">Logout</div>';
         }
 				else
-					echo '<A HREF="register.php">Login/Register</A>';
+					echo '<A HREF="login.html">Login/Register</A>';
 				?>
 			</li>
+      <li><a href="logout.php">LOG OUT</a></li>
             </ul>
           </div>
         </div>
