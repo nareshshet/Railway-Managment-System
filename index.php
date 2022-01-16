@@ -13,7 +13,7 @@
 	color: white;
 }
 html { 
-  background: url(img/bg3.jpg) no-repeat center center fixed; 
+  background: url(https://cdn.pixabay.com/photo/2017/06/24/23/03/railway-2439189_960_720.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,7 +48,8 @@ include("header.php"); ?>
 <br/><br/><br/>
 <?php
 if(isset($_SESSION['user_info']))
-  echo '<h3 align="center"><a href="booktkt.php">Book here</a></h3>';
+  echo '<h3 align="center"><a href="bookticket.php">Book here</a></h3>';
+  		
 else
   echo '<h3  align="center" style="color:blue" ><a href="register.php">Please  REGISTER/LOGIN  before booking</a></h3>';
 ?>
