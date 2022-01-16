@@ -22,7 +22,7 @@ if (isset($_POST['submit']))
     if(mysqli_query($conn, $query))
     {  
         $message = "Ticket booked successfully";
-        header("location:index.php");
+        header("location:ava_seat.php");
     }
     else {
 		$message="Transaction failed";
