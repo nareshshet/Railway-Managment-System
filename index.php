@@ -48,7 +48,8 @@ include("header.php"); ?>
 <br/><br/><br/>
 <?php
 if(isset($_SESSION['user_info']))
-  echo '<h3 align="center"><a href="booktkt.php">Book here</a></h3>';
+  echo '<h3 align="center"><a href="bookticket.php">Book here</a></h3>';
+  		
 else
   echo '<h3  align="center" style="color:blue" ><a href="register.php">Please  REGISTER/LOGIN  before booking</a></h3>';
 ?>

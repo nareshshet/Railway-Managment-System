@@ -44,7 +44,7 @@
 					echo '<A HREF="login.html">Login/Register</A>';
 				?>
 			</li>
-      <li><a href="logout.php">log out</a></li>
+      <li><a href="logout.php">LOG OUT</a></li>
             </ul>
           </div>
         </div>
