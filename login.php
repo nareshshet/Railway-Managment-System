@@ -8,15 +8,16 @@ if(!$conn){
   	die('Could not connect: '.mysqli_connect_error());  
 }
 $email= $_POST['email'];
-echo $email;
+
 $pw= $_POST['password'];
-echo $pw;
+
 $sql = "SELECT * FROM user WHERE email_id = '$email' AND password = '$pw';";
 $sql_result = mysqli_query ($conn, $sql) or die ('request "Could not execute SQL query" '.$sql);
 		$user = mysqli_fetch_assoc($sql_result);
 		if(!empty($user)){
 			$_SESSION['user_info'] = $email;
 			$message='Logged in successfully';
+			header("location:index.php");
 		}
 		else{
 			$message = 'Wrong email or password.';
